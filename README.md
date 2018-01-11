@@ -14,7 +14,6 @@ const app = express();
 /* Middlewares config */
 app.use(express.static('public'));
 app.use(expressLayouts);
-app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('layout', 'layout');
 app.set('views', __dirname + '/views');
